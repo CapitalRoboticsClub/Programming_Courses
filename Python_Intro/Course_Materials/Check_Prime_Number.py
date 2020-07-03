@@ -1,6 +1,5 @@
 # Program to check if a number is prime or not
 import time
-start_time = time.time()
 
 def Prime(num):
     flag = True
@@ -14,16 +13,21 @@ def Prime(num):
                break
     return flag
 
+def main():
+    start_time = time.time()
 
-# To take input from the user
-#num = int(input("Enter a number: "))
-num = 28374677
+    # To take input from the user
+    #num = int(input("Enter a number: "))
+    num = 28374677
 
-if Prime(num):
-    print(num, "is a prime number")
-else:
-    print(num, "is not a prime number")
+    if Prime(num):
+        print(num, "is a prime number")
+    else:
+        print(num, "is not a prime number")
 
-print("My program took", time.time() - start_time, "seconds to run")
+    print("My program took", time.time() - start_time, "seconds to run")
+
+if __name__ == "__main__":
+    main()
 
     
